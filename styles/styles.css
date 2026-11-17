@@ -7,7 +7,7 @@
 :root {
 
     --main-color: #ffffff;
-    --background-color: darkblue;
+    --background-color: steelblue;
     --text-color: #333;
     --image-width: 150px;
     --border-width: 1px;
@@ -97,6 +97,8 @@ aside h2 {
 aside img {
     width: var(--image-width);
     height: auto;
+    display: block;
+    margin: auto;
 
 }
 
