@@ -13,8 +13,33 @@
 }
 
 header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    color: var(--primary-color);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+header img {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px;
 }
 
 body {
@@ -35,6 +60,25 @@ h2 {
     color: var(--primary-color);
     background-color: var(--accent1-color);
     text-align: center;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+figure img {
+    width: 140px;
+    padding: 1px;
+    margin-top: 10px;
+}
+
+figcaption {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
 }
 
 nav,
@@ -71,22 +115,39 @@ article {
     color: #fff;
 }
 
+/* .hero article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    margin: 0;
+    padding: 16px;
+    background-color: var(--accent2-color);
+    color: white;
+} */
+
 .hero article {
     position: absolute;
-    bottom: 20px;
-    left: 5%;
-    right: 5%;
+    bottom: 150px;
+    left: 5px;
+    right: 5px;
     width: auto;
     margin: 0;
     padding: 16px;
     background-color: var(--accent2-color);
     color: white;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
 }
 
 .hero article img {
     float: right;
-    width: 125px;
+    width: 150px;
+    height: auto;
     margin-left: 15px;
+    margin-bottom: 10px;
 
 }
 
@@ -94,9 +155,23 @@ article {
     margin: 0;
 }
 
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+
+}
+
+.history img {
+    width: 250px;
+    height: 220px;
+    margin-top: 30px;
+
+}
+
 .socialmedia ul {
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: flex-end; */
     align-items: center;
     gap: 15px;
     list-style: none;
@@ -105,4 +180,10 @@ article {
 .socialmedia img {
     width: 30px;
     height: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+
 }
