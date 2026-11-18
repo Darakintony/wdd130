@@ -106,7 +106,6 @@ article {
 .hero h1 {
     position: absolute;
     top: 20px;
-    float: right;
     width: 100%;
     padding: 16px;
     margin: 0;
@@ -114,18 +113,6 @@ article {
     background-color: var(--accent2-color);
     color: #fff;
 }
-
-/* .hero article {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    margin: 0;
-    padding: 16px;
-    background-color: var(--accent2-color);
-    color: white;
-} */
 
 .hero article {
     position: absolute;
@@ -151,10 +138,6 @@ article {
 
 }
 
-.hero article {
-    margin: 0;
-}
-
 .history {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -171,7 +154,6 @@ article {
 
 .socialmedia ul {
     display: flex;
-    /* justify-content: flex-end; */
     align-items: center;
     gap: 15px;
     list-style: none;
